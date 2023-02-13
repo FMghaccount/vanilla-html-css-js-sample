@@ -19,7 +19,7 @@
 
 :root {
   --green: #27ae60;
-  --dark-color: #219150;
+  --dark-color: #228c4e;
   --black: #444;
   --light-color: #666;
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -59,6 +59,10 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
   background: var(--green);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-color);
 }
 
 section {
