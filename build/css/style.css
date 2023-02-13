@@ -58,7 +58,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: var(--black);
+  background: var(--green);
 }
 
 section {
