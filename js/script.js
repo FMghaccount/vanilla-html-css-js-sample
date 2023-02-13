@@ -1,36 +1,36 @@
 searchForm = document.querySelector('.search-form');
 
-document.querySelector('#search-btn').onclick = () =>{
+document.querySelector('#search-btn').onclick = () => {
   searchForm.classList.toggle('active');
 }
 
 let loginForm = document.querySelector('.login-form-container');
 
-document.querySelector('#login-btn').onclick = () =>{
+document.querySelector('#login-btn').onclick = () => {
   loginForm.classList.toggle('active');
 }
 
-document.querySelector('#close-login-btn').onclick = () =>{
+document.querySelector('#close-login-btn').onclick = () => {
   loginForm.classList.remove('active');
 }
 
-window.onscroll = () =>{
+window.onscroll = () => {
 
   searchForm.classList.remove('active');
 
-  if(window.scrollY > 80){
+  if (window.scrollY > 80) {
     document.querySelector('.header .header-2').classList.add('active');
-  }else{
+  } else {
     document.querySelector('.header .header-2').classList.remove('active');
   }
 
 }
 
-window.onload = () =>{
+window.onload = () => {
 
-  if(window.scrollY > 80){
+  if (window.scrollY > 80) {
     document.querySelector('.header .header-2').classList.add('active');
-  }else{
+  } else {
     document.querySelector('.header .header-2').classList.remove('active');
   }
 
@@ -38,16 +38,25 @@ window.onload = () =>{
 
 }
 
-function loader(){
-  document.querySelector('.loader-container').classList.add('active');
-}
+// function loader() {
+//   document.querySelector('.loader-container').classList.add('active');
+// }
 
-function fadeOut(){
-  setTimeout(loader, 4000);
-}
+// function fadeOut() {
+//   setTimeout(loader, 4000);
+// }
+
+const navigation = document.querySelector('.navbar')
+
+const navigationHeight = navigation.offsetHeight;
+
+document.documentElement.style.setProperty(
+  '--scroll-padding',
+  navigationHeight + 'px'
+)
 
 var swiper = new Swiper(".books-slider", {
-  loop:true,
+  loop: true,
   centeredSlides: true,
   autoplay: {
     delay: 9500,
@@ -68,7 +77,7 @@ var swiper = new Swiper(".books-slider", {
 
 var swiper = new Swiper(".featured-slider", {
   spaceBetween: 10,
-  loop:true,
+  loop: true,
   centeredSlides: true,
   autoplay: {
     delay: 9500,
@@ -96,7 +105,7 @@ var swiper = new Swiper(".featured-slider", {
 
 var swiper = new Swiper(".arrivals-slider", {
   spaceBetween: 10,
-  loop:true,
+  loop: true,
   centeredSlides: true,
   autoplay: {
     delay: 9500,
@@ -117,8 +126,8 @@ var swiper = new Swiper(".arrivals-slider", {
 
 var swiper = new Swiper(".reviews-slider", {
   spaceBetween: 10,
-  grabCursor:true,
-  loop:true,
+  grabCursor: true,
+  loop: true,
   centeredSlides: true,
   autoplay: {
     delay: 9500,
@@ -139,8 +148,8 @@ var swiper = new Swiper(".reviews-slider", {
 
 var swiper = new Swiper(".blogs-slider", {
   spaceBetween: 10,
-  grabCursor:true,
-  loop:true,
+  grabCursor: true,
+  loop: true,
   centeredSlides: true,
   autoplay: {
     delay: 9500,
